@@ -16,7 +16,7 @@
         </div>
         <div class="weather">
             <img src="rain.png" class="weather-icon">
-            <h1 class="temp">8°c</h1>
+            <h1 class="temp">8°C</h1>
             <h2 class="city">New Delhi</h2>
         </div>
         <div class="details">
@@ -31,26 +31,13 @@
             <div class="col">
                 <img src="wind.png">
                 <div>
-                    <p class="wind">15km/h</p>
+                    <p class="wind">15 km/h</p>
                     <p>Wind speed</p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <script>
-
-        const apiKey = "eb9bac1be5370bc5aa36ff7eaaed5c43";
-        const apiUrl = " https://api.openweathermap.org/data/2.5/weather?units=metric&q=banglore";
-        async function checkWeather() {
-            const response = await fetch(apiUrl + '&appid=$(apikey)');
-            var data = await response.json();
-
-            console.log(data);
-        }
-
-        checkWeather();
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
